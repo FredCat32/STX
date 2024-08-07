@@ -1,0 +1,7 @@
+<h1>Welcome to the Crypto Prices Page</h1>
+<div *ngIf="prices; else loading">
+  <p>Current STX Price: ${{ prices.stxPrice }}</p>
+  <p>Current BTC Price: ${{ prices.btcPrice }}</p>
+  <p>Current ETH Price: ${{ prices.ethPrice }}</p>
+</div>
+<ng-template #loading><p>Loading crypto prices...</p></ng-template>
